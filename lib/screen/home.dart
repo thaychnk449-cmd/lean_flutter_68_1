@@ -6,17 +6,60 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset('assets/images/flutter.png', width: 200, height: 200),
-        SizedBox(height: 20),
-        Image.network(
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Khaoyai41.jpg/1920px-Khaoyai41.jpg?utm_source=th.wikipedia.org&utm_campaign=index&utm_content=thumbnail',
-          width: 200,
-          height: 200,
-        ),
-      ],
-    );
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextButton (
+            style: TextButton.styleFrom(backgroundColor: Colors.orangeAccent),
+            onPressed: () {
+              print('Pressed TextButton');
+            },
+            child: Text(
+              'Click Me',
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            )
+          ),
+          SizedBox(height: 20),
+          FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.greenAccent, 
+              foregroundColor: Colors.white),
+            onPressed: () {
+              print('Pressed FilledButton');
+            },
+            child: Text(
+              'Click Me',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              side: BorderSide(color: Colors.greenAccent, width: 2),
+            ),
+            onPressed: () {
+              print('Pressed OutlinedButton');
+            },
+            child: Text(
+              'Click Me',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.pinkAccent, 
+              foregroundColor: Colors.white),
+            onPressed: () {
+              print('Pressed ElevatedButton');
+            },
+            child: Text(
+              'Click Me',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
+      ),
+    ); 
   }
 }
