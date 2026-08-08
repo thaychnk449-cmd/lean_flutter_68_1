@@ -12,16 +12,25 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: Text('My App'),
-        ),
         backgroundColor: Colors.blue,
         centerTtitle: true,
+      ),
+  // body: Center(child: Text('Hello, World!')
+  body: Home().
         ),
       )
-    ),
-  ),
-  runApp(const MyApp());
+    );
 }
 
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child:) Text('Hello, World!'),
+      child: Text('Hello, World!'),
+  }
+}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
