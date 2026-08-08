@@ -13,7 +13,7 @@ void main() {
         appBar: AppBar(
           title: Text('My App'),
         backgroundColor: Colors.blue,
-        centerTtitle: true,
+        centerTitle: true,
       ),
   // body: Center(child: Text('Hello, World!')
   body: Home().
