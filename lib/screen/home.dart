@@ -46,28 +46,44 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Container(
+          color: Colors.red,
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: const Text(
+            'Hello World',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+        Container(
+          color: Colors.green,
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: const Text(
+            'Hello World',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+
+          ),
+        )
+        Container(
+          color: Colors.blue,
+          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          child: const Text(
+            'Hello World',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+            fontWeight: FontWeight.bold,
+            letterSpacing: 3,
+
+          ),
+        )
+      ],
     );
+      
   }
 }
