@@ -1,25 +1,21 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  // runApp(const MyApp());
 
+  // const app = MaterialApp(title: 'My App', home: Text('Hello World'));
+  // runApp(app);
 
-  const app = MaterialApp(title: 'My App' , home: Text('Hello, World!'));
-   
-
-   runApp(
+  runApp(
     MaterialApp(
       title: 'My App',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('My App'),
-        backgroundColor: Colors.blue,
-        centerTitle: true,
-      ),
-  // body: Center(child: Text('Hello, World!')
-  body: Home().
+        appBar: AppBar(title: Text('My App'), backgroundColor: Colors.greenAccent, centerTitle: true,
         ),
-      )
-    );
+        body: Home(),
+      ),
+    ),
+  );
 }
 
 class Home extends StatelessWidget {
@@ -27,20 +23,32 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child:) Text('Hello, World!'),
-      child: Text('Hello, World!'),
+    return Center(
+      child: Container(
+        color: Colors.amberAccent,
+        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: EdgeInsets.all(50),
+        child: Text(
+          "Hello World",
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
   }
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -50,7 +58,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
 
   final String title;
 
@@ -63,25 +70,19 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       appBar: AppBar(
-        
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        
         title: Text(widget.title),
       ),
       body: Center(
-        
         child: Column(
-          
           mainAxisAlignment: .center,
           children: [
             const Text('You have pushed the button this many times:'),
