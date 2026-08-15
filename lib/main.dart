@@ -1,22 +1,33 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 
-import 'package:learn_flutter_68_1/screen/home.dart';
+// import 'package:learn_flutter_68_1/screen/home.dart';
 
-import 'package:learn_flutter_68_1/screen/item.dart';
-void main() {
-  // runApp(const MyApp());
+// import 'package:learn_flutter_68_1/screen/item.dart';
 
-  // const app = MaterialApp(title: 'My App', home: Text('Hello World'));
-  // runApp(app);
+// import 'package:learn_flutter_68_1/screen/addForm.dart';
+// void main() {
+//   // runApp(const MyApp());
 
-  runApp(
-    MaterialApp(
-      title: 'My App',
-      home: Scaffold(
-        appBar: AppBar(title: Text('My App'), backgroundColor: Colors.greenAccent, centerTitle: true,
-        ),
-        body: Item(),
-      ),
-    ),
-  );
+//   // const app = MaterialApp(title: 'My App', home: Text('Hello World'));
+//   // runApp(app);
+
+//   runApp(
+//     MaterialApp(
+//       title: 'My App',
+//       home: Scaffold(
+//         appBar: AppBar(title: Text('My App'), backgroundColor: Colors.greenAccent, centerTitle: true,
+//         ),
+//         body: Item(),
+//       ),
+//     ),
+//   );
+// }
+
+
+
+
+
+runApp(AppForn());
+{
+  
 }
