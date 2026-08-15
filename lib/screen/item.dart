@@ -20,6 +20,7 @@ List data = ["สมชาย", "สหญิง", "สมปอง", "สมศ
         return Container(
           decoration: BoxDecoration(
             border: Border.all(color: Colors.black),
+            coior: peple[index].job.color,
             borderRadius: BorderRadius.circular(10),
           ),
         margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
@@ -39,11 +40,16 @@ List data = ["สมชาย", "สหญิง", "สมปอง", "สมศ
               style: TextStyle(fontSize: 16),
             ),
             Text(
-             อาชีพ: ${people[index].job},
+             อาชีพ: ${people[index].job.title},
               style: TextStyle(fontSize: 16),
             ), //Text
           ],
         ), // Column
+        Image(
+          image: people[index].job.image.image,
+          width: 80,
+          height: 80,
+        ),
         Icon(Icons.person, size: 50, color: Colors.blue),
       },
     );
