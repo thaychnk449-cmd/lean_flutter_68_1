@@ -90,7 +90,7 @@ class _AddFormState extends State<AddForm> {
                   _age = int.tryParse(value!) ?? 20;
                 },
               ),
-              DropdownButtonFormField<Job>(
+              DropdownButtonFormField<Job> (
                 decoration: InputDecoration(labelText: "Job"),
                 initialValue: _job,
                 items: Job.values.map((key) {
